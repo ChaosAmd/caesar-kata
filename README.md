@@ -1,21 +1,10 @@
 # Caesar
 
-**TODO: Add description**
+A project to code Caesar cypher encoe and decode function. This project was created with `mix`.
 
-## Installation
+## Testing
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `caesar` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:caesar, "~> 0.1.0"}
-  ]
-end
+To run tests, run on terminal:
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/caesar](https://hexdocs.pm/caesar).
-
+mix test
+```
