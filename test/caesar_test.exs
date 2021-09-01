@@ -34,7 +34,7 @@ defmodule CaesarTest do
       assert Caesar.decode(Caesar.encode(2, str)) == str
     end
 
-    test "does not decode for phrases without consistence frequency" do
+    test "does not decode for phrases without consistent letter frequency" do
       str = "The quick brown fox jumps over the lazy dog"
       refute Caesar.decode(Caesar.encode(2, str)) == str
     end
