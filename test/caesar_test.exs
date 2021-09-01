@@ -29,12 +29,12 @@ defmodule CaesarTest do
       assert Caesar.decode("a") == "K"
     end
 
-    test "decode should be inverse for regular word" do
+    test "inverses for regular word encode" do
       str = "test"
       assert Caesar.decode(Caesar.encode(2, str)) == str
     end
 
-    test "decode does not work for phrases without frequency" do
+    test "does not decode for phrases without consistence frequency" do
       str = "The quick brown fox jumps over the lazy dog"
       refute Caesar.decode(Caesar.encode(2, str)) == str
     end
