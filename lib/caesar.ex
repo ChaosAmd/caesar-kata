@@ -1,11 +1,11 @@
 defmodule Caesar do
-  def alphabet_base, do: 26
+  defp alphabet_base, do: 26
 
-  def freq_table, do: [8.1, 1.5, 2.8, 4.2, 12.7, 2.2, 2.0, 6.1, 7.0,
+  defp freq_table, do: [8.1, 1.5, 2.8, 4.2, 12.7, 2.2, 2.0, 6.1, 7.0,
                       0.2, 0.9, 4.0, 2.4,  6.7, 7.5, 1.9, 0.1, 6.0,
                       6.3, 9.0, 2.8, 1.0,  2.4, 0.2, 2.0, 0.1]
 
-  def alphabet, do: for n <- ?a..?z, do: n
+  defp alphabet, do: for n <- ?a..?z, do: n
 
   def encode(n, str) do 
     str_points = String.codepoints(str)
