@@ -5,8 +5,6 @@ defmodule Caesar do
                       0.2, 0.9, 4.0, 2.4,  6.7, 7.5, 1.9, 0.1, 6.0,
                       6.3, 9.0, 2.8, 1.0,  2.4, 0.2, 2.0, 0.1]
 
-  defp alphabet, do: for n <- ?a..?z, do: n
-
   def encode(n, str) do 
     str_points = String.codepoints(str)
     List.to_string(for c <- str_points, do: shift(n, c))
