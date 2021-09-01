@@ -4,9 +4,9 @@ A project to code Caesar cypher encoe and decode function. This project was crea
 
 ## Tests
 
-To run tests, run on terminal:
+To run tests, type and executes on terminal:
 ```
-mix test --cover
+$ mix test --cover
 ```
 
 It genereates a similar output to:
